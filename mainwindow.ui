@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* ==============================
+
+   Premium White-Gold Theme
+   ============================== */
+
+/* Main Window */
+QMainWindow {
+    background-color: #FFFFFF; /* clean white background */
+    color: #333333;
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    font-size: 10pt;
+}
+
+QLabel#headingLabel {
+    background-color: #FFD700; /* gold background */
+    color: #FFFFFF;            /* white text */
+    font-size: 22pt;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #FFD700; /* gold */
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #FFC700; /* lighter gold on hover */
+}
+
+QPushButton:pressed {
+    background-color: #E6B800; /* darker gold on click */
+}
+
+/* LineEdits and Text Fields */
+QLineEdit, QTextEdit {
+    background-color: #FFF9F0; /* very light cream */
+    border: 2px solid #FFD700;
+    border-radius: 6px;
+    padding: 4px;
+    color: #333333;
+}
+
+QLineEdit:focus, QTextEdit:focus {
+    border: 2px solid #FFA500; /* bright gold focus */
+}
+
+/* Labels */
+QLabel {
+    color: #333333;
+    font-weight: 600;
+}
+
+/* Tables */
+QTableWidget {
+    background-color: #FFFFFF;
+    border: 1px solid #FFD700;
+    gridline-color: #FFD700;
+}
+
+QHeaderView::section {
+    background-color: #FFD700;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    border: none;
+    background: #FDF5E6;
+    width: 12px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background: #FFD700;
+    min-height: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #FFC700;
+}
+
+/* Tooltips */
+QToolTip {
+    background-color: #FFD700;
+    color: #FFFFFF;
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="leName">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>100</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #F2F2F7;        /* iOS light grey */
+    border: 1px solid #D1D1D6;
+    border-radius: 12px;
+
+    font: 11pt &quot;SF Pro Display&quot;;
+    color: #000;
+
+    padding: 6px 10px;
+}
+
+/* When user clicks inside the text box */
+QLineEdit:focus {
+    border: 1px solid #007AFF;        /* iPhone blue border */
+    background-color: #FFFFFF;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leRoll">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>60</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #F2F2F7;        /* iOS light grey */
+    border: 1px solid #D1D1D6;
+    border-radius: 12px;
+
+    font: 11pt &quot;SF Pro Display&quot;;
+    color: #000;
+
+    padding: 6px 10px;
+}
+
+/* When user clicks inside the text box */
+QLineEdit:focus {
+    border: 1px solid #007AFF;        /* iPhone blue border */
+    background-color: #FFFFFF;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leFather">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>140</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #F2F2F7;        /* iOS light grey */
+    border: 1px solid #D1D1D6;
+    border-radius: 12px;
+
+    font: 11pt &quot;SF Pro Display&quot;;
+    color: #000;
+
+    padding: 6px 10px;
+}
+
+/* When user clicks inside the text box */
+QLineEdit:focus {
+    border: 1px solid #007AFF;        /* iPhone blue border */
+    background-color: #FFFFFF;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leCaste">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>180</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #F2F2F7;        /* iOS light grey */
+    border: 1px solid #D1D1D6;
+    border-radius: 12px;
+
+    font: 11pt &quot;SF Pro Display&quot;;
+    color: #000;
+
+    padding: 6px 10px;
+}
+
+/* When user clicks inside the text box */
+QLineEdit:focus {
+    border: 1px solid #007AFF;        /* iPhone blue border */
+    background-color: #FFFFFF;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leDistrict">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>220</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #F2F2F7;        /* iOS light grey */
+    border: 1px solid #D1D1D6;
+    border-radius: 12px;
+
+    font: 11pt &quot;SF Pro Display&quot;;
+    color: #000;
+
+    padding: 6px 10px;
+}
+
+/* When user clicks inside the text box */
+QLineEdit:focus {
+    border: 1px solid #007AFF;        /* iPhone blue border */
+    background-color: #FFFFFF;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leGPA">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>260</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #F2F2F7;        /* iOS light grey */
+    border: 1px solid #D1D1D6;
+    border-radius: 12px;
+
+    font: 11pt &quot;SF Pro Display&quot;;
+    color: #000;
+
+    padding: 6px 10px;
+}
+
+/* When user clicks inside the text box */
+QLineEdit:focus {
+    border: 1px solid #007AFF;        /* iPhone blue border */
+    background-color: #FFFFFF;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>SF Pro Display</family>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font: 700 13pt &quot;SF Pro Display&quot;;
+    color:black;
+    background: linear-gradient(#5AC8FA, #007AFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: 1px;
+}</string>
+    </property>
+    <property name="text">
+     <string>   Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>SF Pro Display</family>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font: 700 13pt &quot;SF Pro Display&quot;;
+    color: black;
+    background: linear-gradient(#5AC8FA, #007AFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: 1px;
+}</string>
+    </property>
+    <property name="text">
+     <string>   Roll Number</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>SF Pro Display</family>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font: 700 13pt &quot;SF Pro Display&quot;;
+    color:black;
+    background: linear-gradient(#5AC8FA, #007AFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: 1px;
+}</string>
+    </property>
+    <property name="text">
+     <string>   Father's Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>SF Pro Display</family>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font: 700 13pt &quot;SF Pro Display&quot;;
+    color: black;
+    background: linear-gradient(#5AC8FA, #007AFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: 1px;
+}</string>
+    </property>
+    <property name="text">
+     <string>   Caste</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>SF Pro Display</family>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font: 700 13pt &quot;SF Pro Display&quot;;
+    color: black;
+    background: linear-gradient(#5AC8FA, #007AFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: 1px;
+}</string>
+    </property>
+    <property name="text">
+     <string>   District</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>SF Pro Display</family>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font: 700 13pt &quot;SF Pro Display&quot;;
+    color: black;
+    background: linear-gradient(#5AC8FA, #007AFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: 1px;
+}</string>
+    </property>
+    <property name="text">
+     <string>   GPA</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAdd">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>250</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(0, 170, 255);
+    color: white;
+    font: 600 12pt &quot;SF Pro Display&quot;;
+    border: none;
+
+    /* small &amp; nicely rounded */
+    border-radius: 14px;
+
+ }</string>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnUpdate">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>190</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(0, 170, 255);
+    color: white;
+    font: 600 12pt &quot;SF Pro Display&quot;;
+    border: none;
+
+    /* small &amp; nicely rounded */
+    border-radius: 14px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Update</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDelete">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>130</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(0, 170, 255);
+    color: white;
+    font: 600 12pt &quot;SF Pro Display&quot;;
+    border: none;
+
+    /* small &amp; nicely rounded */
+    border-radius: 14px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnNext">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>60</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color: white;
+	background-color: rgb(0, 170, 255);
+    font: 600 12pt &quot;SF Pro Display&quot;;
+    border: none;
+
+    /* small &amp; nicely rounded */
+    border-radius: 14px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Next</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblStatus">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>480</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="headingLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>531</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);</string>
+    </property>
+    <property name="text">
+     <string>STUDENT RECORD MANAGEMENT SYSTEM</string>
+    </property>
+   </widget>
+   <zorder>leName</zorder>
+   <zorder>leRoll</zorder>
+   <zorder>leFather</zorder>
+   <zorder>leCaste</zorder>
+   <zorder>leDistrict</zorder>
+   <zorder>leGPA</zorder>
+   <zorder>label</zorder>
+   <zorder>label2</zorder>
+   <zorder>label3</zorder>
+   <zorder>label5</zorder>
+   <zorder>label6</zorder>
+   <zorder>btnAdd</zorder>
+   <zorder>btnUpdate</zorder>
+   <zorder>btnDelete</zorder>
+   <zorder>btnNext</zorder>
+   <zorder>lblStatus</zorder>
+   <zorder>headingLabel</zorder>
+   <zorder>label4</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
